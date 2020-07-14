@@ -1,6 +1,6 @@
 <?php
-	// Disable PHP output buffering to allow returning of long responses
-	ob_end_clean();
+    // Disable PHP output buffering to allow returning of long responses
+    ob_end_clean();
     ob_implicit_flush();
     
     function fetch($url) {
@@ -17,10 +17,10 @@
             CURLOPT_TIMEOUT => 120,
         ); 
 
-        $curlHandler = curl_init($url);
-        curl_setopt_array($curlHandler, $options);
-        $response = curl_exec($curlHandler);
-        curl_close($curlHandler);
+        $curl = curl_init($url);
+        curl_setopt_array($curl, $options);
+        $response = curl_exec($curl);
+        curl_close($curl);
 
         return $response;
     }
