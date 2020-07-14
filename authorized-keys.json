@@ -1,0 +1,12 @@
+{
+    "authorized-keys": [
+        {
+            "name": "Test 1",
+            "key": "test123test456test789"
+        },
+        {
+            "name": "Test 2",
+            "key": "test987test654test321"
+        }
+    ]
+}

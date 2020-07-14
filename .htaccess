@@ -1,0 +1,4 @@
+<Files "authorized-keys.json">  
+  Order Allow,Deny
+  Deny from all
+</Files>
